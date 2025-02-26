@@ -1,0 +1,341 @@
+/* Estilos globales */
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor de dispositivos */
+.device-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Tarjetas de dispositivos */
+.device-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
+
+.device-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de los dispositivos */
+.device-card img {
+    /* width: 100%; */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Estilos de texto */
+.device-card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.device-card p {
+    color: #6b7280;
+    margin: 5px 0;
+}
+
+.device-card .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f2937;
+}
+/* Sección de comentarios */
+.comment-section {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.comment-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.comment-box {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    margin-top: 6px;
+    resize: vertical;
+    transition: border 0.3s ease;
+}
+
+.comment-box:focus {
+    border: 2px solid #3b82f6;
+    outline: none;
+}
+
+.comment-button {
+    margin-top: 8px;
+    background-color: #3b82f6;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.comment-button:hover {
+    background-color: #2563eb;
+}
+
+
+/* //////  ///////////////////////////////////////////////////////////////////////// */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Cabecera */
+header {
+    background-color: white;
+    color: #0052a3;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner de promociones */
+.promo-banner {
+    background: linear-gradient(135deg, #ff6b6b, #6b66ff);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.promo-banner h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.promo-banner p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.promo-button {
+    background-color: white;
+    color: #0066cc;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.promo-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Barra de búsqueda y filtros */
+.search-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para mejor organización */
+    gap: 1rem;
+}
+
+.search-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.filter-controls {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.filter-wrapper {
+    flex: 1;
+    min-width: 150px;
+}
+
+.filter-wrapper select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23888' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1rem) center;
+}
+
+.filter-wrapper select:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+.search-button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+
+/* Cuadrícula de dispositivos */
+.device-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.device-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.device-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.device-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+
+.device-card h2 {
+    font-size: 1.2rem;
+    padding: 1rem 1rem 0.5rem;
+    color: #333;
+}
+
+.device-card p {
+    padding: 0 1rem;
+    color: #666;
+}
+
+.device-card .price {
+    font-weight: bold;
+    color: #0066cc;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem 1rem;
+}
+
+.comment-section {
+    padding: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.comment-section h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.comment-box {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.comment-box:focus {
+    outline: none;
+    border-color: #0066cc;
+}
+
+.comment-button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-button:hover {
+    background-color: #0052a3;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .search-container {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .search-wrapper {
+        flex: 2;
+    }
+    
+    .filter-controls {
+        flex: 1;
+    }
+    
+    .device-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+}
