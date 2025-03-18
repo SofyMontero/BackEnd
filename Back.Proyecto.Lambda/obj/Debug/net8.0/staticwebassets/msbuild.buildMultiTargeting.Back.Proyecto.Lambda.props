@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Back.Proyecto.Lambda.props" />
+</Project>

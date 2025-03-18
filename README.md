@@ -1,2 +1,0 @@
-# BackEnd
-Actividad 1
