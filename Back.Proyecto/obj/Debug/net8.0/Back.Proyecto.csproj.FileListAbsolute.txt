@@ -10,3 +10,16 @@ C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\ProyectoBackEnd\Back.Pro
 C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\ProyectoBackEnd\Back.Proyecto\obj\Debug\net8.0\refint\Back.Proyecto.dll
 C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\ProyectoBackEnd\Back.Proyecto\obj\Debug\net8.0\Back.Proyecto.pdb
 C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\ProyectoBackEnd\Back.Proyecto\obj\Debug\net8.0\ref\Back.Proyecto.dll
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\bin\Debug\net8.0\Back.Proyecto.deps.json
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\bin\Debug\net8.0\Back.Proyecto.dll
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\bin\Debug\net8.0\Back.Proyecto.pdb
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\obj\Debug\net8.0\Back.Proyecto.csproj.AssemblyReference.cache
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\obj\Debug\net8.0\Back.Proyecto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\obj\Debug\net8.0\Back.Proyecto.AssemblyInfoInputs.cache
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\obj\Debug\net8.0\Back.Proyecto.AssemblyInfo.cs
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\obj\Debug\net8.0\Back.Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\obj\Debug\net8.0\Back.Proyecto.sourcelink.json
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\obj\Debug\net8.0\Back.Proyecto.dll
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\obj\Debug\net8.0\refint\Back.Proyecto.dll
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\obj\Debug\net8.0\Back.Proyecto.pdb
+C:\Users\Sofia Montero\Documents\Proyecto\otros\BackEnd\Back.Proyecto\obj\Debug\net8.0\ref\Back.Proyecto.dll

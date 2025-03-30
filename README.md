@@ -13,11 +13,11 @@ mkdir [ModuleName]
 cd [ModuleName]
 ```
 
-Ejemplo para un módulo llamado **Nomina**:
+Ejemplo para un módulo llamado **Proyecto**:
 
 ```sh
-mkdir Nomina
-cd Nomina
+mkdir Proyecto
+cd Proyecto
 ```
 
 ---
@@ -33,7 +33,7 @@ dotnet new classlib -n FacturaE.[ModuleName] -f net8.0
 Ejemplo:
 
 ```sh
-dotnet new classlib -n FacturaE.Nomina -f net8.0
+dotnet new classlib -n FacturaE.Proyecto -f net8.0
 ```
 
 ---
@@ -49,7 +49,7 @@ dotnet new serverless.AspNetCoreMinimalAPI -n FacturaE.[ModuleName].Lambda
 Ejemplo:
 
 ```sh
-dotnet new serverless.AspNetCoreMinimalAPI -n FacturaE.Nomina.Lambda
+dotnet new serverless.AspNetCoreMinimalAPI -n FacturaE.Proyecto.Lambda
 ```
 
 ---
@@ -65,7 +65,7 @@ dotnet new sln -n [ModuleName]
 Ejemplo:
 
 ```sh
-dotnet new sln -n Nomina
+dotnet new sln -n Proyecto
 ```
 
 ### 📌 4.1 Agregar los proyectos a la solución
@@ -79,8 +79,8 @@ dotnet sln add ..\Common\FacturaE.Common\FacturaE.Common.csproj
 Ejemplo:
 
 ```sh
-dotnet sln add .\FacturaE.Nomina\FacturaE.Nomina.csproj
-dotnet sln add .\FacturaE.Nomina.Lambda\FacturaE.Nomina.Lambda.csproj
+dotnet sln add .\FacturaE.Proyecto\FacturaE.Proyecto.csproj
+dotnet sln add .\FacturaE.Proyecto.Lambda\FacturaE.Proyecto.Lambda.csproj
 dotnet sln add ..\Common\FacturaE.Common\FacturaE.Common.csproj
 ```
 
@@ -133,10 +133,10 @@ npm create vite@latest [ProyectName] -- --template react-ts
 Ejemplo:
 
 ```sh
-npm create vite@latest facturae.nomina.react -- --template react-ts
+npm create vite@latest facturae.proyecto.react -- --template react-ts
 ```
 
-Renombrar el proyecto a formato **PascalCase** (FacturaE.Nomina.React).
+Renombrar el proyecto a formato **PascalCase** (FacturaE.Proyecto.React).
 
 ---
 
@@ -190,3 +190,7 @@ Copiar los archivos de emisión desde un módulo existente y adaptarlos según s
 ### 9.4 Configurar el enrutamiento
 
 Actualizar los archivos `main.tsx` y `App.tsx`, asegurándose de modificar los **imports** de rutas según el nuevo módulo.
+
+### 9.5 Configurar el archivo `Api`
+
+Se realiza 3 servicios con coneccion a base local 

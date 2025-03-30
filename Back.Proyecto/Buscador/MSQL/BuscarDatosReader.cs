@@ -1,5 +1,5 @@
 using System.Data;
-using Depper;
+using Dapper;
 using Back.Proyecto.Shared.Models;
 
 namespace  Back.Proyecto.Buscador.MSQL;
@@ -13,13 +13,12 @@ public class BuscadorDatosReader: IBuscadorDatosReader
             _dbConnection = dbConnection;
         }
 
-        public async Task<IEnumerable<Producto>> BuscarProductosPorNombreAsync(string nombre)
+        public async Task<IEnumerable<Producto>> GetProductosAsync(string nombre)
         {
-            string query = @"
-                SELECT nombre 
-                FROM PRODUCTO
-                WHERE nombre LIKE @Nombre";
+            string query_buscar = @"
+                SELECT * FROM producto";
 
-            return await _dbConnection.QueryAsync<Producto>(query, new { Nombre = $"%{nombre}%" });
+            return await _dbConnection.QueryAsync<Producto>(query_buscar);
         }
+        
 }
